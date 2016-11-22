@@ -104,13 +104,13 @@
         <checkstyle.resourceIncludes>**/*.properties*</checkstyle.resourceIncludes>
 
         <dependency.locations.enabled>false</dependency.locations.enabled>
-        <maven-javadoc-plugin-version>2.10.3</maven-javadoc-plugin-version>
+        <maven-javadoc-plugin-version>2.10.4</maven-javadoc-plugin-version>
         <maven-jar-plugin-version>3.0.2</maven-jar-plugin-version>
-        <maven-compiler-plugin-version>3.3</maven-compiler-plugin-version>
+        <maven-compiler-plugin-version>3.6.0</maven-compiler-plugin-version>
         <maven-pmd-plugin-version>3.6</maven-pmd-plugin-version>
         <maven-source-plugin-version>3.0.1</maven-source-plugin-version>
-        <maven-surefire-plugin.version>2.17</maven-surefire-plugin.version>
-        <maven-site-plugin-version>3.5</maven-site-plugin-version>
+        <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
+        <maven-site-plugin-version>3.6</maven-site-plugin-version>
         <maven-checkstyle-plugin-version>2.17</maven-checkstyle-plugin-version>
         <maven-project-info-reports-plugin-version>2.9</maven-project-info-reports-plugin-version>
         <maven-surefire-report-plugin.version>${maven-surefire-plugin.version}</maven-surefire-report-plugin.version>
@@ -373,7 +373,7 @@
                 <!--TODO: switch back to jackson parser-->
                 <groupId>org.json</groupId>
                 <artifactId>json</artifactId>
-                <version>20141113</version>
+                <version>20160810</version>
             </dependency>
 
             <!-- Redis -->
@@ -381,7 +381,7 @@
                 <!-- TODO: Move to only redison dependency -->
                 <groupId>redis.clients</groupId>
                 <artifactId>jedis</artifactId>
-                <version>2.7.2</version>
+                <version>2.9.0</version>
             </dependency>
             <dependency>
                 <groupId>org.redisson</groupId>
@@ -400,20 +400,20 @@
             <dependency>
                 <groupId>org.asynchttpclient</groupId>
                 <artifactId>async-http-client</artifactId>
-                <version>2.0.2</version>
+                <version>2.0.24</version>
             </dependency>
             <dependency>
                 <!-- TODO: Move to only async dependency -->
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpclient</artifactId>
-                <version>4.5</version>
+                <version>4.5.2</version>
             </dependency>
 
             <!-- ReactiveX -->
             <dependency>
                 <groupId>io.reactivex</groupId>
                 <artifactId>rxjava</artifactId>
-                <version>1.1.5</version>
+                <version>1.2.2</version>
             </dependency>
 
             <!-- Memcached -->
@@ -421,7 +421,7 @@
                 <!-- TODO: Move to async memcached client -->
                 <groupId>net.spy</groupId>
                 <artifactId>spymemcached</artifactId>
-                <version>2.12.0</version>
+                <version>2.12.1</version>
             </dependency>
 
             <!-- Lucene -->
@@ -664,7 +664,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-antrun-plugin</artifactId>
-                    <version>1.7</version>
+                    <version>1.8</version>
                 </plugin>
             </plugins>
         </pluginManagement>
@@ -688,7 +688,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>2.5</version>
+                <version>2.5.3</version>
                 <configuration>
                     <goals>install</goals>
                     <useReleaseProfile>false</useReleaseProfile>
